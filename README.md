@@ -1,71 +1,64 @@
-FuckItJS
-========
-### Javascript Error Steamroller
+# FuckItNode
 
-FuckItJS uses state-of-the-art technology to make sure your javascript code runs whether your compiler likes it or not.
+### JavaScript Runtime Error Steamroller (Now for Node.js)
 
-Technology
-----------
+**Forked from the legendary [FuckItJS](https://github.com/mattdiamond/fuckitjs) by Matt Diamond.**  
+This version brings all the chaotic energy of the original browser tool to your backend scripts.  
+Now you can steamroll your server-side JS like it’s the early 2000s and nothing matters.
 
-Through a process known as *Eval-Rinse-Reload-And-Repeat*, FuckItJS repeatedly compiles your code, detecting errors and slicing those lines out of the script.
-To survive such a violent process, FuckItJS reloads itself after each iteration, allowing the onerror handler to catch every single error in your terribly written code.
+> ⚠️ This project was vibe-coded with maximum confidence and minimum planning. Use at your own peril. Or don't. We honestly don't care.
 
-Installation
-------------
+## Technology
 
-1. Include jQuery, because everything requires jQuery
-2. Include "fuckit.js"
-3. The End
+Through a process known as *Try-It-Explode-It-Nuke-It-And-Retry*, FuckItNode repeatedly attempts to execute your horrific script, slicing out any line that dares throw a runtime error. If a syntax error gets in the way? We steamroll from the bottom of the file up until something vaguely resembling code survives.
 
-API
----
+Unlike the original, we don’t rely on jQuery, `onerror`, or the browser. This one’s pure Node.js, powered by `vm.Script`, `uncaughtException`, and sheer nihilism.
 
-**FuckIt**(*path_to_your_shitty_script_file*)
+## Usage
 
-This will keep evaluating your code until all errors have been sliced off like mold on a piece of perfectly good bread.
-Whether or not the remaining code is even worth executing, we don't know. We also don't particularly care.
+```bash
+npm install phuckit-node
+# npm has a bad word filter 🙃
+```
 
-FuckIt returns a promise that will be resolved once your godforsaken code actually makes it to the finish line. You can use this callback to chain additional FuckIt calls, since we all know calling it once won't do enough damage to the Internet.
+Just require it using Node's -r flag so it wraps your disaster before it can scream.
 
-**FuckIt.noConflict**()
+```bash
+node -r phuckit-node ./your-shitty-script.js
+```
 
-Are you using two different FuckIt libraries? Fuck it, use FuckIt.NoConflict.
-Of course, this won't really help since FuckItJS reloads itself multiple times and will continually overwrite the global FuckIt variable, but hey... at least you can feel like you're doing something smart.
+Or require it in any file
+```js
+require('phuckit-node')
 
-**FuckIt.moreConflict**()
+// your shitty code
+```
 
-Are you tired of running from conflict? Are you ready to overwrite every single property on the global `window` object even if it crashes your browser? Then this method is for you.
+### Runtime Compatibility
+Node.js 16+. Possibly earlier. Possibly never tested.
 
-Browser Compatibility
----------------------
+Works best on scripts that:
+- Were written quickly
+- Were never reviewed
+- Should never have worked in the first place
 
-Really? *Really?*
+### Credit
+Massive praise and full credit to Matt Diamond, who birthed this masterpiece of controlled failure known as FuckItJS back in 2012.
+This Node version is a spiritual sequel and unholy homage.
 
-FAQ
--------
+### Support
+If you encounter issues, have questions, or just want to scream into the void, you can reach out via:
 
-**1) Is this a good idea?**
+- Email: `404@chemdrew.com` (all messages automatically routed to `/dev/null`)
+- GitHub Issues: Sure, open one. Why not.
+- Carrier pigeon: Might get a faster reply.
+- Yelling into the night sky: Surprisingly therapeutic.
 
-Of course not. This is quite possibly the worst javascript plugin ever written.
+All support requests are carefully reviewed, considered, and then ignored with professional-grade indifference. We guarantee your message will be lost, misinterpreted, or flagged as spam by an AI trained on sarcasm.
 
-**2) Isn't "eval" evil?**
+For personal growth, emotional support, or debugging advice: try meditation, or just delete your code. It’s what we do.
 
-See Question #1.
-
-**3) Help! I have way too much money and desperately need to give a sizeable portion of it to you!**
-
-Have no fear: I am now accepting donations via GitTip! https://www.gittip.com/mattdiamond/
-
-Support
--------
-
-For technical issues: [@mattdiamond](http://twitter.com/mattdiamond) on Twitter, or e-mail me at [mdiamond@jhu.edu](mailto:mdiamond@jhu.edu)
-
-For personal issues: Take a deep breath, it's going to be okay.
-
-LICENSE
--------
-
+### LICENSE
 Copyright (C) 2012, Matt Diamond
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, pulverize, distribute, synergize, compost, defenestrate, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

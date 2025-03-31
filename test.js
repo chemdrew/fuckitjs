@@ -1,9 +1,11 @@
+require('.');
+
 var x = fuuuuu
 var y = 2;
 
 buh
 
-alert(x);
-  heh heh
+console.log(x);
+  // heh heh
 
-alert(y);
+console.log(y);

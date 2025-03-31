@@ -1,0 +1,13 @@
+{
+  "name": "phuckit-node",
+  "version": "1.0.0",
+  "description": "no fucks given",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"You think I wrote tests for this?!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemdrew/fuckitjs.git"
+  }
+}
